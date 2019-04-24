@@ -2,16 +2,16 @@
 
 # Hardware Set Up
 
-**The GoPiGo:** The body of the robot. Assembly instructions here: https://www.dexterindustries.com/GoPiGo/get-started-with-the-gopigo3-raspberry-pi-robot/1-assemble-gopigo3/
+**Micro SD Card:** There needs to be an micro SD card in order to download and install Dexter Industries software. You 
+must install the image on the Raspberry Pi using your PC. Here's a link: https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/
 
 **Raspberry Pi 3:** The brains of the AlexaRobot.
+
+**The GoPiGo:** The body of the robot. Assembly instructions here: https://www.dexterindustries.com/GoPiGo/get-started-with-the-gopigo3-raspberry-pi-robot/1-assemble-gopigo3/
 
 **The Speaker for the Raspberry Pi:** In order to hear the response of Alexa there needs to be a speaker connected to the Raspberry Pi. 
 
 **A USB Microphone:** In order to speak with the AlexaRobot there needs to be a microphone. 
-
-**Micro SD Card:** There needs to be an micro SD card in order to download and install Dexter Industries software. You 
-must install the image on the Raspberry Pi using your PC. Here's a link: https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/
 
 # Software Set Up
 
