@@ -58,7 +58,7 @@ Next, in IFTTT, you will want to set up your applets.  You will need an applet f
 
 ![6](https://user-images.githubusercontent.com/39312485/56707913-d1370300-66e8-11e9-8482-21edb8a61484.JPG)
 
-**7.** The URL is either your provided ngrok url, or your custom domain. For me, I purchase a domain name, which will be explained in the "connect to ngrok" set up. For now, just enter in “ngrok.io”.
+**7.** The URL is either your provided ngrok url, or your custom domain. For me, I purchased a domain name, which will be explained in the "connect to ngrok" set up. For now, just enter in “ngrok.io”.
 
 ![7](https://user-images.githubusercontent.com/39312485/56707926-e01db580-66e8-11e9-9f36-8dfbcf94b23f.JPG)
 
@@ -68,14 +68,6 @@ Next, in IFTTT, you will want to set up your applets.  You will need an applet f
 **9.**  Click “Create Action” and then “Finish”.
 
 You will need to do this for all the moves you want your Amazon Alexa controlled robot to make. In this project, you will make six: one for “Forward”, “Backward”, “Left”, “Stop”, “Right”, and “Dance”.
-
-
-
-
-
-
-
-
 
 ### Connect to ngrok 
 Ngrok is a service that allows you to connect to your Raspberry Pi through any network.  With ngrok, you don’t need to be on the same local network as your Pi to SSH in or to access a web server. Ngrok will help us pipe information back from IFTTT to the Pi. IFTTT needs an internet-based URL to contact, so we’ll use ngrok to make our server accessible to the outside world.
