@@ -1,80 +1,66 @@
-
-# coding: utf-8
-
-# In[ ]:
-
-
-# Alexabot is Alexabot: Amazon Alexa Controlled Robot With the Raspberry Pi
-#
+#Byron Dickerson
+#https://github.com/DexterInd
 # This file is the flask server that listens for commands from Alexa.
-# You can see the full project here: https://www.dexterindustries.com/projects/alexabot-amazon-alexa-controlled-robot/
-# In this tutorial we build Alexabot, the Amazon Alexa Controlled Robot, using the Raspberry Pi.  
-# We will walk through the steps of building a voice controlled robot with the Raspberry Pi and GoPiGo.  
-# With Alexabot, you can command the Raspberry Pi Robot around with commands like "Alexa Forward!" or "Alexa Coffee!".
-#
-# See more about Dexter Industries at http://www.dexterindustries.com
-# See more about the GoPiGo at http://www.dexterindustries.com/gopigo
 
-from flask import Flask
-import gopigo
-import time
+
+from flask import Flask #import for the Flask server
+from easygopigo3 import EasyGoPiGo3 # import the GoPiGo3 drivers
+import time #import time from time library
 
 app = Flask(__name__)
 
-@app.route('/')
+# Create an instance of the GoPiGo3 class.
+gpg = EasyGoPiGo3()
+
+@app.route('/')#connect to default ngrok server 
 def index():
 	return 'Hello world'
 
-@app.route('/forward')
+@app.route('/forward') #connect to ngrok server for text string for applet
 def forward():
 	print("Forward!")
-	gopigo.fwd()	# Send the GoPiGo Forward
+	gpg.forward()	# Send the GoPiGo3 Forward
 	time.sleep(1)	# for 1 second.
-	gopigo.stop()	# the stop the GoPiGo
-	return 'Alexabot moved forward!'
+	gpg.stop()	# the stop the GoPiGo3
+	return 'AlexaRobot moved forward!'
 
-@app.route('/backward')
+@app.route('/backward')#connect to ngrok server
 def backward():
 	print("Backward!")
-	gopigo.bwd()	# Send the GoPiGo Backward
+	gpg.backward()	# Send the GoPiGo3 Backward
 	time.sleep(1)	# for 1 second
-	gopigo.stop()	# and then stop the GoPiGo.
+	gpg.stop()	# and then stop the GoPiGo3.
 	return 'Backward!'
 
-@app.route('/left')
+@app.route('/left') #connect to ngrok server for text string for applet
 def left():
 	print("Left!")
-	gopigo.left()
+	gpg.left()
 	time.sleep(1)
-	gopigo.stop()
+	gpg.stop()
 	return 'Left!'
 
-@app.route('/right')
+@app.route('/right') #connect to ngrok server for text string for applet
 def right():
 	print("Right!")
-	gopigo.right()
+	gpg.right()
 	time.sleep(1)
-	gopigo.stop()
+	gpg.stop()
 	return 'Right!'
 
-@app.route('/dance')
+@app.route('/dance') #connect to ngrok server for text string for applet
 def dance():
 	print("Dance!")
 	for each in range(0,5):
-		gopigo.right()
+		gpg.right()
 		time.sleep(0.25)
-		gopigo.left()
+		gpg.left()
 		time.sleep(0.25)
-		gopigo.bwd()
+		gpg.backward()
 		time.sleep(0.25)
-	gopigo.stop()
+	gpg.stop()
 	return 'Dance!'
 
-@app.route('/coffee')
-def coffee():
-	print("Coffee!")
-	return 'coffee!'
 	
 if __name__ == '__main__':
-	app.run(debug=True, host='0.0.0.0')
-
+	app.run(debug=True, host='0.0.0.0') #allow flask to run IP addresss
