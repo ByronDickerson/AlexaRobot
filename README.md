@@ -20,6 +20,9 @@
 
 ## Software Set Up
 
+![AlexaRobot1](https://user-images.githubusercontent.com/39312485/56705659-d6dc1b00-66df-11e9-9c69-d4ad678c526a.png)
+
+
 ### AlexaPi 
 In order to use the Alexa Voice Services to listen to commands, you must use the AlexaPi project software. Set up instructions here: https://github.com/alexa-pi/AlexaPi
 
