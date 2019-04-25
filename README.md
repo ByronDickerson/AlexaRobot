@@ -27,3 +27,4 @@ In order to use the Alexa Voice Services to listen to commands, you must use the
 
 **Ngrok:** Ngrok is a service that allows you to connect to your Raspberry Pi through any network.  With Ngrok, you don’t need to be on the same local network as your Pi to SSH in or to access a web server.  ngrok will help us pipe information back from IFTTT to the Pi. IFTTT needs an internet-based URL to contact, so we’ll use ngrok to make our server accessible to the outside world.
 
+![AlexaRobot1](https://user-images.githubusercontent.com/39312485/56705225-1e61a780-66de-11e9-9aa6-f000b35b334a.png)
