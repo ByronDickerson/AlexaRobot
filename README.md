@@ -1,21 +1,27 @@
 # AlexaRobot
 
-# Hardware Set Up
+## Hardware Set Up
 
-**Micro SD Card:** There needs to be an micro SD card in order to download and install Dexter Industries software. You 
-must install the image on the Raspberry Pi using your PC. Here's a link: https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/
+**What You'll Need** 
 
-**Raspberry Pi 3:** The brains of the AlexaRobot.
+* **A Micro SD Card:** There needs to be an micro SD card in order to download and install Dexter Industries software for the AlexaRobot (GoPiGo3). You must install Raspbian for Robots on an micro SD Card for the Raspberry Pi. Here's a link on how to install the image: https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/
 
-**The GoPiGo:** The body of the robot. Assembly instructions here: https://www.dexterindustries.com/GoPiGo/get-started-with-the-gopigo3-raspberry-pi-robot/1-assemble-gopigo3/
+* **A Raspberry Pi 3:** The brains of the AlexaRobot.
 
-**The Speaker for the Raspberry Pi:** In order to hear the response of Alexa there needs to be a speaker connected to the Raspberry Pi. 
+* **The GoPiGo3:** The body of the robot. Assembly instructions here: https://www.dexterindustries.com/GoPiGo/get-started-with-the-gopigo3-raspberry-pi-robot/1-assemble-gopigo3/
 
-**A USB Microphone:** In order to speak with the AlexaRobot there needs to be a microphone. 
+* **A Speaker for the Raspberry Pi:** In order to hear the response of Alexa there needs to be a speaker connected to the Raspberry Pi. Here's the speaker that I used: https://www.dexterindustries.com/product/speaker-for-the-raspberry-pi/
 
-# Software Set Up
+* **A USB Microphone:** In order to speak with the AlexaRobot there needs to be a microphone. Here's the one that I used:  https://www.amazon.com/gp/product/B01MQ2AA0X/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
 
-**AlexaPi:** In order to use the Alexa Voice Services to listen to commands, you must use the AlexaPi project software. Set up instructions here: https://github.com/alexa-pi/AlexaPi
+* **8 AA Batteries:** The robot is powered with 8 AA batteries.
+
+**Instructions:** The first step is to assemble the GoPiGo3 Robot for the Raspberry Pi. Next, you will mount the microphone to one of the USB ports on the Raspberry Pi.  Finally, you should mount the speaker for the Raspberry Pi to the top of the GoPiGo3 and hold it in place with a ziptie.  Again, the robot is powered with 8 AA batteries.
+
+## Software Set Up
+
+### AlexaPi 
+In order to use the Alexa Voice Services to listen to commands, you must use the AlexaPi project software. Set up instructions here: https://github.com/alexa-pi/AlexaPi
 
 **If This Then That(IFTTT):** IFTTT is a sevice that lets the AlexaRobot connect different parts of the internet together. There is a need for IFTTT because Alexa cannot return text strings to the Raspberry Pi. IFTTT helps connect the AlexaPi responses back to the Raspberry Pi. 
 
