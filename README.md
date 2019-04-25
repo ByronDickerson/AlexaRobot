@@ -1,6 +1,6 @@
 # AlexaRobot
 
-This is my senior project dealing with integrating the GoPiGo3 robot controlled with Alexa Voice Services.
+This is my senior project dealing with the intergration of the GoPiGo3 robot with the Alexa Voice Services.
 
 I saw a tutorial online on how to create a robot that can be controlled by Alexa and thought it would be interesting to attempt. Credit is to DexterIndustries for creating their Alexa controlled robot. Their Alexa controlled robot is a bit out of date so I had to change a quite a bit in order to get the robot to work. Also, above is the code for my flask.py file
 
