@@ -152,4 +152,4 @@ Finally, start the Flask server:
 sudo python alexabot-flask-app.py
 ```
 
-Now when you say "Alexa" she will say "Yes"..... you will say "Trigger Forward" and the AlexaRobot should move forward. The same for all 6 commands created for your applets. 
+Now when you say "Alexa" she will say "Yes"..... you will say "Trigger Forward" and the AlexaRobot should move forward. You can do the same thing for all 6 commands created in your applets.  
